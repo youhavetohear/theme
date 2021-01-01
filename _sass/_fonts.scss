@@ -1,0 +1,75 @@
+// --------------------------
+// REGULAR FONTS (IBM Plex Sans)
+// --------------------------
+
+@font-face {
+	font-family: 'blogtype';
+
+	font-weight: normal;
+	font-style: normal;
+
+	src: 	url('../fonts/Regular.ttf') format('truetype');
+
+	   -moz-font-feature-settings:	$font-feature-settings;
+		 -o-font-feature-settings:	$font-feature-settings;
+	-webkit-font-feature-settings:	$font-feature-settings;
+			font-feature-settings:	$font-feature-settings;
+
+	font-display: fallback;
+	font-kerning: 			auto;
+	letter-spacing: 		normal;
+}
+
+@font-face {
+	font-family: 'blogtype';
+
+	font-weight: normal;
+	font-style: italic;
+
+	src: 	url('../fonts/Italic.ttf') format('truetype');
+
+	   -moz-font-feature-settings:	$font-feature-settings;
+		 -o-font-feature-settings:	$font-feature-settings;
+	-webkit-font-feature-settings:	$font-feature-settings;
+			font-feature-settings:	$font-feature-settings;
+
+	font-display: fallback;
+	font-kerning: 			auto;
+	letter-spacing: 		normal;
+}
+
+@font-face {
+	font-family: 'blogtype';
+
+	font-weight: bold;
+	font-style: normal;
+
+	src: 	url('../fonts/Bold.ttf') format('truetype');
+
+	   -moz-font-feature-settings:	$font-feature-settings;
+		 -o-font-feature-settings:	$font-feature-settings;
+	-webkit-font-feature-settings:	$font-feature-settings;
+			font-feature-settings:	$font-feature-settings;
+
+	font-display: fallback;
+	font-kerning: 			auto;
+	letter-spacing: 		normal;
+}
+
+@font-face {
+	font-family: 'blogtype';
+
+	font-weight: bold;
+	font-style: italic;
+
+	src: 	url('../fonts/BoldItalic.ttf') format('truetype');
+
+	   -moz-font-feature-settings:	$font-feature-settings;
+		 -o-font-feature-settings:	$font-feature-settings;
+	-webkit-font-feature-settings:	$font-feature-settings;
+			font-feature-settings:	$font-feature-settings;
+
+	font-display: fallback;
+	font-kerning: 			auto;
+	letter-spacing: 		normal;
+}

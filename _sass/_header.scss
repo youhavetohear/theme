@@ -1,0 +1,48 @@
+// Header styles
+
+header#site-header {
+	
+	display: block;
+	position: 	relative;
+	z-index: 	10000000;
+
+	background: 		$header-background;
+	
+	/* Text and background color for dark mode */
+	@media (prefers-color-scheme: dark) {
+	    background: 	$header-background-dark-mode;
+	}
+	
+	padding-top: $p-margin-top;
+	padding-bottom: $p-margin-bottom;
+	
+	nav {
+		text-align: center;
+		
+		a.header-wordmark {
+			
+			position: relative;
+			display: inline-block;
+			
+			img {
+				position: relative;
+				display: block;
+				
+				max-width: 100%;
+				max-height: 150px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			&:hover,
+			&:focus {
+				background: $brand-green;
+			}
+			
+			&:focus {
+				outline: 3px solid $brand-green;
+			}
+		}
+	}
+	
+}

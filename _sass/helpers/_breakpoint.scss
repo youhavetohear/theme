@@ -1,0 +1,78 @@
+div.breakpoint {
+
+	display: block;
+	position: fixed;
+
+	top: 		auto;
+	bottom: 	0;
+	left: 		auto;
+	right: 		0;
+
+	max-width: 75px;
+	max-height: 75px;
+
+	background: 	$brand;
+	opacity: 		1;
+	border-radius: 	1000px;
+	border:			2px solid $black;
+	margin:			10px;
+	padding: 		15px 15px;
+
+	z-index: 100000;
+
+	p {
+		color: $black;
+		padding: 0;
+		text-align: center;
+	}
+
+	@include xs {
+		span.xs { display: show; }
+		span.sm { display: none; }
+		span.md { display: none; }
+		span.lg { display: none; }
+		span.xl { display: none; }
+		span.xxl { display: none; }
+	}
+	@include sm {
+		span.xs { display: none; }
+		span.sm { display: show; }
+		span.md { display: none; }
+		span.lg { display: none; }
+		span.xl { display: none; }
+		span.xxl { display: none; }
+	}
+	@include md {
+		span.xs { display: none; }
+		span.sm { display: none; }
+		span.md { display: show; }
+		span.lg { display: none; }
+		span.xl { display: none; }
+		span.xxl { display: none; }
+	}
+	@include lg {
+		span.xs { display: none; }
+		span.sm { display: none; }
+		span.md { display: none; }
+		span.lg { display: show; }
+		span.xl { display: none; }
+		span.xxl { display: none; }
+	}
+	@include xl {
+		span.xs { display: none; }
+		span.sm { display: none; }
+		span.md { display: none; }
+		span.lg { display: none; }
+		span.xl { display: show; }
+		span.xxl { display: none; }
+	}
+	@include xxl {
+		span.xs { display: none; }
+		span.sm { display: none; }
+		span.md { display: none; }
+		span.lg { display: none; }
+		span.xl { display: none; }
+		span.xxl { display: show; }
+	}
+
+}

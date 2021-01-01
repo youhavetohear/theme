@@ -1,0 +1,24 @@
+// Mixins
+
+// Backgrounds
+
+@mixin dark-mode {
+	
+	@media (prefers-color-scheme: dark) {
+		
+		@content;
+		
+	}
+	
+}
+
+@mixin cyan {
+	color: 				$cyan !important;
+	
+	a {
+		&:hover,
+		&:focus {
+			color:		$cyan;
+		}
+	}
+}
