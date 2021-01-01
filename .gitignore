@@ -4,6 +4,7 @@ index.md
 Gemfile.lock
 *_site
 *.DS_Store
+*.jekyll-cache
 *_posts
 /about
 /projects
