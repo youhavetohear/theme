@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="0 0 32 32" width="32" height="32">
+  <defs/>
+  <metadata> Produced by OmniGraffle 7.18.1\n2021-01-01 15:44:25 +0000</metadata>
+  <g id="favicon" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1" stroke="none" fill="none">
+    <title>favicon</title>
+    <g id="favicon_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_17">
+        <title>Earbud tip</title>
+        <g id="Graphic_23">
+          <title>outter-circle</title>
+          <circle cx="16" cy="16" r="15.0000239685284" fill="#fcf7f7"/>
+          <circle cx="16" cy="16" r="15.0000239685284" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        </g>
+        <g id="Graphic_22">
+          <title>inner-circle</title>
+          <circle cx="15.98353" cy="15.98353" r="11.8585497052958" fill="#333"/>
+          <circle cx="15.98353" cy="15.98353" r="11.8585497052958" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_19">
+          <title>reflection-tip</title>
+          <path d="M 15.497595 2.2591246 C 12.147968 2.380839 8.834352 3.72023 6.277297 6.277297 C 3.5756105 8.97897 2.2332308 12.525202 2.250158 16.066143 L 2.8751656 16.066143 C 2.8582333 12.685155 4.139591 9.298873 6.719238 6.719238 C 9.154252 4.2842126 12.308003 3.0059863 15.497595 2.8845594 Z" fill="#999"/>
+        </g>
+        <g id="Graphic_18">
+          <title>shadow-grill</title>
+          <path d="M 6.686666 16 L 9.092078 16 C 9.096253 14.241815 9.769071 12.484924 11.110532 11.14347 C 12.460362 9.793632 14.230836 9.120815 16 9.125016 L 16 6.719604 C 13.615238 6.715406 11.22917 7.623069 9.409655 9.442593 C 7.5985075 11.253731 6.6908445 13.626218 6.686666 16 Z" fill="#666"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
