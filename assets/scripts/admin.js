@@ -6,6 +6,21 @@
 // turn them into something that can be easily pasted
 // straight into a Jekyll markdown file – reducing the 
 // need to understand how Github works to update the site.
+//
+// The format the generator should create is:
+// ---
+// layout: post
+// date: YYYY-MM-DD HH:MM:SS
+// title: ""
+// artist: ""
+// spotify: 
+//     - https://open.spotify.com/
+// applemusic: 
+//     - https://music.apple.com/
+// ---
+// 
+// This area will update with your post content.
+
 
 function generateJekyllPost() {
     
