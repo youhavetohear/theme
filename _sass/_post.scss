@@ -1,0 +1,128 @@
+// Posts page styles
+
+body#post {
+	
+	main {
+		min-height: 60vh;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+		
+	article#post-content {
+		
+		@include xs {
+			padding-top: 75px;
+			padding-bottom: 75px;
+		}
+		@include sm {
+			padding-top: 90px;
+			padding-bottom: 15px;
+		}
+		@include md {
+			padding-top: 90px;
+			padding-bottom: 30px;
+		}
+		@include lg-up {
+			padding-top: 90px;
+			padding-bottom: 0;
+		}
+			
+		@include md-down {
+			background: url('/assets/images/site/earphones/horizontal-left.svg');
+			background-repeat: no-repeat;
+			background-position: 0 15px;
+		}
+		@include xs {
+			background-size: 75vw;
+		}
+		@include sm {
+			background-size: 50vw;
+		}
+		@include md {
+			background-size: 40vw;
+		}
+			
+		@include lg-up {
+				background: 
+					url('/assets/images/site/earphones/sidebar-left.svg'), url('/assets/images/site/earphones/sidebar-right-2.svg');
+				background-repeat: 
+					no-repeat;
+		}
+		@include lg {
+			background-position: 
+				0 0,
+				100% 100%;
+			background-size: 175px;
+		}
+		@include xl {
+			background-position: 
+				0 0,
+				100% 100%;
+			background-size: 250px;
+		}
+		@include xxl {
+			background-position: 
+				0 0,
+				100% 100%;
+			background-size: 350px;
+		}
+		
+		
+		
+		
+		h1.post-title {
+			padding-top: 0;			
+		}
+		
+		span.post-title {
+			font-weight: 600 !important;
+		}
+		span.post-artist {
+			font-weight: 400 !important;
+			font-style: italic;
+		}
+		p.post-date {
+			color: $gray-500;
+		}
+		
+		
+		section.post-weblinks {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		a.button {
+			
+			padding: 10px 20px;
+			border-radius: 100px;
+			border: 2px solid;
+			
+			font-weight: 900;
+			
+			&.spotify {
+				border-color: $brand-spotify;
+				
+				&:hover {
+					background: $brand-spotify;
+					color: $brand-white;
+					text-decoration: none;
+				}
+				
+				margin-right: 10px;
+			}
+			&.applemusic {
+				border-color: $brand-applemusic;
+				
+				&:hover {
+					background: $brand-applemusic;	
+					color: $brand-white;
+					text-decoration: none;
+				}
+				
+			}
+			
+		}
+		
+	}
+
+		
+}
