@@ -2,7 +2,6 @@
 _config.yml
 index.html
 about.md
-Gemfile.lock
 *_site
 *.DS_Store
 *.jekyll-cache
