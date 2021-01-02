@@ -1,0 +1,122 @@
+// Home page styles
+
+body#four-oh-four {
+	
+	main {
+		min-height: 60vh;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		
+		a {
+			text-decoration: underline;
+			
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	
+	section#fourohfour-content {
+		@include xs {
+			padding-top: 75px;
+			padding-bottom: 75px;
+		}
+		@include sm {
+			padding-top: 90px;
+			padding-bottom: 15px;
+		}
+		@include md {
+			padding-top: 90px;
+			padding-bottom: 30px;
+		}
+		@include lg-up {
+			padding-top: 90px;
+			padding-bottom: 0;
+		}
+			
+		@include md-down {
+			background: url('/assets/images/site/earphones/horizontal-right.svg');
+			background-repeat: no-repeat;
+			background-position: 100% 0;
+		}
+		@include xs {
+			background-size: 75vw;
+		}
+		@include sm {
+			background-size: 50vw;
+		}
+		@include md {
+			background-size: 40vw;
+		}
+			
+		@include lg-up {
+				background: 
+					url('/assets/images/site/earphones/sidebar-left-2-alt.svg'), url('/assets/images/site/earphones/sidebar-right-2-alt.svg');
+				background-repeat: 
+					no-repeat;
+		}
+		@include lg {
+			background-position: 
+				0 100%,
+				100% 0;
+			background-size: 175px;
+		}
+		@include xl {
+			background-position: 
+				0 100%,
+				100% 0;
+			background-size: 250px;
+		}
+		@include xxl {
+			background-position: 
+				0 100%,
+				100% 0;
+			background-size: 350px;
+		}
+	}
+	
+	.colophon {
+		
+		min-height: 50vh;
+		max-width: 	750px;
+
+		h1.colophon-heading {
+			@include xs {
+				font-size: 		$h1-404-font-size-base-xs * 1.5;	
+				line-height:	$h1-404-line-height-base-xs * 1.5;
+				padding-top: 	$h1-404-padding-top-xs * 1.5;
+				padding-bottom: $h1-404-padding-bottom-xs / 4;
+				margin-left: 	-3px;
+			}
+			@include sm {
+				font-size: 		$h1-404-font-size-base-sm * 1.5;	
+				line-height:	$h1-404-line-height-base-sm * 1.5;
+				padding-bottom: $h1-404-padding-bottom-sm / 4;
+				margin-left: 	-6px;
+			}
+			@include md {
+				font-size: 		$h1-404-font-size-base-md * 2;	
+				line-height:	$h1-404-line-height-base-md * 2;
+				padding-top: 	$h1-404-padding-top-md * 2;
+				padding-bottom: $h1-404-padding-bottom-md / 4;
+				margin-left: 	-8px;
+			}
+			@include lg {
+				font-size: 		$h1-404-font-size-base-lg * 2;	
+				line-height:	$h1-404-line-height-base-lg * 2;
+				padding-top: 	$h1-404-padding-top-lg * 1.35;
+				padding-bottom: $h1-404-padding-bottom-lg / 4;
+				margin-left: 	-10px;
+			}
+			@include xl {
+				font-size: 		$h1-404-font-size-base-xl * 2;	
+				line-height:	$h1-404-line-height-base-xl * 2;
+				padding-top: 	$h1-404-padding-top-xl * 1.5;
+				padding-bottom: $h1-404-padding-bottom-xl / 4;
+				margin-left: 	-10px;
+			}
+		}
+
+	}
+	
+}

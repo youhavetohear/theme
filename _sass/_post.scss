@@ -10,6 +10,8 @@ body#post {
 		
 	article#post-content {
 		
+		min-height: 50vh;
+		
 		@include xs {
 			padding-top: 75px;
 			padding-bottom: 75px;
@@ -30,7 +32,7 @@ body#post {
 		@include md-down {
 			background: url('/assets/images/site/earphones/horizontal-left.svg');
 			background-repeat: no-repeat;
-			background-position: 0 15px;
+			background-position: 0 0;
 		}
 		@include xs {
 			background-size: 75vw;
@@ -97,6 +99,11 @@ body#post {
 			border: 2px solid;
 			
 			font-weight: 900;
+			
+			@include xs {
+				display: block;
+				&:first-of-type {margin-bottom: 15px;}
+			}
 			
 			&.spotify {
 				border-color: $brand-spotify;

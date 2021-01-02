@@ -206,11 +206,23 @@ footer#site-footer {
 				&:hover,
 				&:focus {
 					color:				$footer-color-hover;
-					text-decoration: 	$footer-text-decoration-hover;
+					text-decoration: 	underline;
 				}
 				
 			}
 			
+		}
+		
+		aside#footer--colophon {
+			
+			margin-top: 50px;
+			p, a {
+				color: $brand-white;
+				padding-bottom: 0;
+			}
+			a {
+				font-weight: 900;
+			}
 		}
 		
 		@include clearfix;

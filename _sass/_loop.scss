@@ -1,0 +1,370 @@
+// Loop page styles
+
+body#loop {
+	
+	main {
+		padding: 30px 0 0;
+	}
+	section.loop-item {
+		min-height: 300px;
+		
+		@include xs {
+			padding: 75px 0;
+		}
+		@include sm {
+			padding: 90px 0 15px 0;
+		}
+		@include md {
+			padding: 90px 0 30px;
+		}
+		@include lg-up {
+			padding: 90px 0;
+		}
+	
+		&:nth-child(odd) {
+			
+			@include md-down {
+				background: url('/assets/images/site/earphones/horizontal-left.svg');
+				background-repeat: no-repeat;
+				background-position: 0 15px;
+			}
+			@include xs {
+				background-size: 75vw;
+			}
+			@include sm {
+				background-size: 50vw;
+			}
+			@include md {
+				background-size: 40vw;
+			}
+			
+		}
+		&:nth-child(even) {
+			
+			@include md-down {
+				background: url('/assets/images/site/earphones/horizontal-right.svg');
+				background-position: top right;
+				background-repeat: no-repeat;
+				background-position: 100% 15px;
+			}
+			@include xs {
+				background-size: 75vw;
+			}
+			@include sm {
+				background-size: 50vw;
+			}
+			@include md {
+				background-size: 40vw;
+			}
+
+		}
+		&.odd:nth-child(1) {
+			@include lg-up {
+				background: url('/assets/images/site/earphones/sidebar-left.svg');
+				background-repeat: no-repeat;
+			}
+			@include lg {
+				background-position: 0 50%;
+				background-size: 175px;
+			}
+			@include xl {
+				background-position: 0 50%;
+				background-size: 250px;
+			}
+			@include xxl {
+				background-position: 0 50%;
+				background-size: 350px;
+			}
+		}
+		&.odd:nth-child(2) {
+			@include lg-up {
+				background: url('/assets/images/site/earphones/sidebar-right.svg');
+				background-repeat: no-repeat;
+			}
+			@include lg {
+				background-position: 100% 50%;
+				background-size: 175px;
+			}
+			@include xl {
+				background-position: 100% 0;
+				background-size: 250px;
+			}
+			@include xxl {
+				background-position: 100% 0;
+				background-size: 350px;
+			}
+		}
+		&.odd:nth-child(3) {
+			@include lg-up {
+				background: url('/assets/images/site/earphones/sidebar-left-2.svg');
+				background-repeat: no-repeat;
+			}
+			@include lg {
+				background-position: 0 50%;
+				background-size: 175px;
+			}
+			@include xl {
+				background-position: 0 50%;
+				background-size: 250px;
+			}
+			@include xxl {
+				background-position: 0 50%;
+				background-size: 350px;
+			}
+		}
+		&.odd:nth-child(4) {
+			@include lg-up {
+				background: url('/assets/images/site/earphones/sidebar-right-2.svg');
+				background-repeat: no-repeat;
+			}
+			@include lg {
+				background-position: 100% 100%;
+				background-size: 175px;
+			}
+			@include xl {
+				background-position: 100% 100%;
+				background-size: 250px;
+			}
+			@include xxl {
+				background-position: 100% 100%;
+				background-size: 350px;
+			}
+		}
+		&.odd:nth-child(5) {
+			@include lg-up {
+				background: url('/assets/images/site/earphones/sidebar-left-3.svg');
+				background-repeat: no-repeat;
+			}
+			@include lg {
+				background-position: 0 50%;
+				background-size: 175px;
+			}
+			@include xl {
+				background-position: 0 50%;
+				background-size: 250px;
+			}
+			@include xxl {
+				background-position: 0 50%;
+				background-size: 350px;
+			}
+		}
+		&.even:nth-child(1) {
+			@include lg-up {
+				background: url('/assets/images/site/earphones/sidebar-left-alt.svg');
+				background-repeat: no-repeat;
+			}
+			@include lg {
+				background-position: 0 50%;
+				background-size: 175px;
+			}
+			@include xl {
+				background-position: 0 50%;
+				background-size: 250px;
+			}
+			@include xxl {
+				background-position: 0 50%;
+				background-size: 350px;
+			}
+		}
+		&.even:nth-child(2) {
+			@include lg-up {
+				background: url('/assets/images/site/earphones/sidebar-right-alt.svg');
+				background-repeat: no-repeat;
+			}
+			@include lg {
+				background-position: 100% 50%;
+				background-size: 175px;
+			}
+			@include xl {
+				background-position: 100% 0;
+				background-size: 250px;
+			}
+			@include xxl {
+				background-position: 100% 0%;
+				background-size: 350px;
+			}
+		}
+		&.even:nth-child(3) {
+			@include lg-up {
+				background: url('/assets/images/site/earphones/sidebar-left-2-alt.svg');
+				background-repeat: no-repeat;
+			}
+			@include lg {
+				background-position: 0 100%;
+				background-size: 175px;
+			}
+			@include xl {
+				background-position: 0 100%;
+				background-size: 250px;
+			}
+			@include xxl {
+				background-position: 0 100%;
+				background-size: 350px;
+			}
+		}
+		&.even:nth-child(4) {
+			@include lg-up {
+				background: url('/assets/images/site/earphones/sidebar-right-2-alt.svg');
+				background-repeat: no-repeat;
+			}
+			@include lg {
+				background-position: 100% 50%;
+				background-size: 175px;
+			}
+			@include xl {
+				background-position: 100% 50%;
+				background-size: 250px;
+			}
+			@include xxl {
+				background-position: 100% 50%;
+				background-size: 350px;
+			}
+		}
+		&.even:nth-child(5) {
+			@include lg-up {
+				background: url('/assets/images/site/earphones/sidebar-left-3-alt.svg');
+				background-repeat: no-repeat;
+			}
+			@include lg {
+				background-position: 0 50%;
+				background-size: 175px;
+			}
+			@include xl {
+				background-position: 0 50%;
+				background-size: 250px;
+			}
+			@include xxl {
+				background-position: 0 50%;
+				background-size: 350px;
+			}
+		}
+		
+		
+		
+		h2.loop-item-title-and-artist {
+			padding-top: 0;			
+		}
+		
+		p {
+			&:last-of-type {
+				padding-bottom: 0;
+			}
+		}
+		
+		span.loop-item-title {
+			font-weight: 600 !important;
+		}
+		span.loop-item-artist {
+			font-weight: 400 !important;
+			font-style: italic;
+		}
+		p.loop-item-date {
+			color: $gray-500;
+		}
+		
+	}
+	
+	div.pagination {
+	
+		position: relative;
+
+		@include md-up {
+		display: flex;
+		}
+
+		margin-top: 30px;
+		
+		border-top: 3px solid $brand-gray;
+		background: $footer-background;
+
+		@include clearfix;
+
+		p[class^="page--next-prev--"] {
+
+			position: relative;
+			flex: 1;
+			
+			background: $brand-gray;
+
+			padding: 20px;
+			margin: 0;
+			width: 50%;
+			max-width: 50%;
+
+			@include md-up {
+			}
+
+			a {
+				display: inline-block;
+				color: $brand-green;
+
+				&:hover {
+					color: $brand-gray;
+					background: none;
+					outline: none;
+				}
+
+				&::after {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			&:hover,
+			&:focus {
+				color:      $brand-black;
+				background: $brand-green;
+				outline:    none;
+			}
+
+			@include clearfix;
+		}
+
+		p.page--next-prev--prev {
+			float:      left;
+			text-align: right;
+			
+			@include xs {
+				text-align: center
+			}
+		}
+
+		p.page--next-prev--next {
+			float:      right;
+			text-align: left;
+			
+			@include xs {
+				text-align: center
+			}
+		}
+
+		p.page--next-prev--prev-blank {
+			background: none;
+
+			&:hover {
+				background: none;
+			}
+
+			@include sm-down {
+				display: none;
+			}
+		}
+
+		span.page--next-prev--arrow {
+			display: block;
+			float: left;
+			width: 35px;
+		}
+
+		span.page--next-prev--label {
+			display: block;
+			font-weight: bold;
+		}
+	
+	}
+	
+}
