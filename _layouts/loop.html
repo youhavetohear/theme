@@ -6,50 +6,7 @@ layout: default
 
 <main id="content">
 	
-	{% assign pagenumber = paginator.page | modulo: 2 %}
 	
-	{% for post in paginator.posts %}
-	
-	{% if pagenumber == 1 %}
-	<section class="loop-item odd">
-	{% else %}
-	<section class="loop-item even">
-	{% endif %}
-		<article class="container">
-		
-			<h2 class="loop-item-title-and-artist">
-				<span class="loop-item-title"><a href="{{ post.url }}" title="Read {{ post.title }}">{{ post.title | smartify }}</a></span><br>
-				<span class="loop-item-artist">{{ post.artist | smartify }}</span>
-			</h2>
-			{{ post.content }}
-			<p class="loop-item-date"><time datetime="{{ post.date | date: '%Y-%m-%d %H:%M:%S' }}">{{ post.date | date: "%d/%m/%Y %H:%M" }}</time></p>
-		
-		</article>
-	</section>	
-	{% endfor %}
-	
-	{% if paginator.total_pages > 1 %}
-	<div class="pagination" role="navigation">
-		{% if paginator.previous_page %}
-		<p class="page--next-prev--prev">
-			<a class="page--next-prev--label" href="{{ paginator.previous_page_path | relative_url }}" title="Go to previous page">← Previous</a>
-		</p>
-		{% else %}
-		<p class="page--next-prev--prev-blank">
-		</p>  
-		{% endif %}
-	
-	
-		{% if paginator.next_page %}
-		<p class="page--next-prev--next">
-			<a class="page--next-prev--label" href="{{ paginator.next_page_path | relative_url }}" title="Go to next page">Next →</a>
-		</p>  
-		{% else %}
-		<p class="page--next-prev--prev-blank">
-		</p>  
-		{% endif %}
-	</div>
-	{% endif %}
 	
 		
 </main>
