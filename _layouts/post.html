@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main id="content">
+						
+	<article id="post-content">
+		
+		<header class="post-title container">
+
+			<h1 class="post-title">
+				<span class="post-title">{{ page.title | smartify }}</span><br>
+				<span class="post-artist">{{ page.artist | smartify }}</span>
+			</h1>			
+
+		</header>
+
+		<section class="post-body container">
+			
+			{{ content }}
+				
+		</section>
+		
+		<section class="post-weblinks container">
+			
+			{% if page.spotify %}
+			<p><a class="button spotify" href="{{ page.spotify }}" title="Visit Spotify to listen to {{ page.title | smartify }} by {{ page.artist | smartify }}" rel="external">Listen on Spotify</a>
+			{% endif %}
+			{% if page.applemusic %}
+			<a class="button applemusic" href="{{ page.applemusic }}" title="Visit Apple Music to listen to {{ page.title | smartify }} by {{ page.artist | smartify }}" rel="external">Listen on Apple Music</a></p>
+			{% endif %}
+			
+		</section>
+					
+		<aside class="post-meta container">
+			
+			<p class="post-date"><time datetime="{{ page.date | date: '%Y-%m-%d %H:%M:%S' }}">{{ page.date | date: "%d/%m/%Y %H:%M" }}</time></p>
+			
+		</aside>
+				
+	</article>
+	
+</main>
+
+{% include footer.html %}
