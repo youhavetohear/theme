@@ -24,19 +24,29 @@ header#site-header {
 			position: relative;
 			display: inline-block;
 			
-			img {
+			color: 	$true-white;
+			
+			svg {
 				position: relative;
 				display: block;
 				
 				max-width: 100%;
-				max-height: 150px;
+				max-height: 150px !important;
 				margin-left: auto;
 				margin-right: auto;
-			}
+								
+				g#wordmark-earbuds {
+					display: none;
+				}
+				
+				}
 			
 			&:hover,
-			&:focus {
-				background: $brand-green;
+			&:focus,
+			&:active {
+				g#wordmark-earbuds {
+					display: block;
+				}
 			}
 			
 			&:focus {

@@ -30,6 +30,7 @@ $cyan:    	 						#00B3FF !default;
 
 $brand:                             $green;
 $brand-green:                       $green;
+$brand-pink:                     $magenta;
 $brand-white:                       $white;
 $brand-gray:                        $gray-900;
 $brand-black:                       $true-black;
@@ -39,7 +40,7 @@ $brand-applemusic:                  #fa57c1;
 
 // Default colors
 
-$body-background:					$brand-gray;
+$body-background:					$brand-pink;
 $body-color:						$brand-black;
 $main-background:                   $brand-white;
 
@@ -62,7 +63,7 @@ $link-text-decoration:				none;
 $link-text-decoration-color:        $brand-green;
 $link-text-decoration-hover:		underline;
 
-$header-background:					$brand-gray;
+$header-background:					$brand-pink;
 $header-background-dark-mode:		$brand-gray;
 
 $header-color:						$brand-white;
@@ -70,7 +71,7 @@ $header-color-dark-mode:			$brand-white;
 $header-color-hover:				$brand-green;
 $header-color-hover-dark-mode: 		$brand-green;
 
-$footer-background:					$brand-gray;
+$footer-background:					$brand-pink;
 $footer-background-dark-mode:		$brand-gray;
 
 $footer-color:						$brand-white;

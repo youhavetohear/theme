@@ -68,7 +68,7 @@
 	  padding-bottom: 	$p-padding-bottom-lg / 2 !important;
   }
 
-  @include xl {
+  @include xl-up {
 	  padding-top: 		$p-padding-top-xl / 2 !important;
 	  padding-bottom: 	$p-padding-bottom-xl / 2 !important;
   }
