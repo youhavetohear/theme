@@ -78,3 +78,39 @@ body[id^='admin-'] {
 	
 	
 }
+
+body[id^='admin-'] 	article#page-content {
+		
+	@include md-down {
+		background: url('/assets/images/site/earphones/horizontal-left.svg');
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	}
+		
+	@include lg-up {
+		background: 
+			url('/assets/images/site/earphones/sidebar-left.svg'), 
+			url('/assets/images/site/earphones/sidebar-right.svg');
+		background-repeat: 
+			no-repeat;
+	}
+	@include lg {
+		background-position: 
+			0 0,
+			100% 50%;
+		background-size: 175px;
+	}
+	@include xl {
+		background-position: 
+			0 0,
+			100% 50%;
+		background-size: 250px;
+	}
+	@include xxl {
+		background-position: 
+			0 0,
+			100% 50%;
+		background-size: 350px;
+	}
+	
+}
