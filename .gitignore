@@ -7,6 +7,5 @@ about.md
 *.jekyll-cache
 *_posts
 /about
-/projects
-/writing
+/admin
 404.html
