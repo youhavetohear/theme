@@ -1,6 +1,7 @@
 *.sass-cache
 _config.yml
-index.md
+index.html
+about.md
 Gemfile.lock
 *_site
 *.DS_Store
