@@ -41,8 +41,12 @@ function generateJekyllPost() {
     jekyllpost += "date: " + today + "\n";
     jekyllpost += "title: \"" + document.getElementById("new-post--metadata--song-title").value + "\"\n";
     jekyllpost += "artist: \"" + document.getElementById("new-post--metadata--song-artist").value + "\"\n";
-    jekyllpost += "spotify: \n    - " + document.getElementById("new-post--links--spotify").value + "\n";
-    jekyllpost += "applemusic: \n    - " + document.getElementById("new-post--links--applemusic").value + "\n";
+    if (document.getElementById("new-post--links--spotify").value != "") {
+        jekyllpost += "spotify: \n    - " + document.getElementById("new-post--links--spotify").value + "\n";
+    }
+    if (document.getElementById("new-post--links--applemusic").value != "") {
+        jekyllpost += "applemusic: \n    - " + document.getElementById("new-post--links--applemusic").value + "\n";
+    }
     
     jekyllpost += "---\n\n"
     
