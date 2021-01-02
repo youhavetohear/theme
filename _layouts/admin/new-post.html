@@ -1,0 +1,69 @@
+---
+layout: page
+---
+
+<h2>How to add a new post</h2>
+<ol>
+	<li>Complete the fields below</li>
+	<li>Click “Copy to clipboard” (button at the bottom of this page)</li>
+	<li>Click “Create post” (button at the bottom of this page) – a new tab will open</li>
+	<li>Paste into the “Edit new file” box (center of the new page)</li>
+	<li>Name the file in the format <code>2021-12-31-nameofsong-nameofartist.md</code> (text box at the top of the new page). 
+	<br>File names <strong>must</strong> have a date at the start in the format <code>YYYY-MM-DD-</code> or the post won't show up. The date <strong>must</strong> be today or earlier.
+	<br>File names <strong>must</strong> end in <code>.md</code> or the post will not format correctly.</li>
+	<li>Click “Commit new file” (button at the bottom of the new page)</li>
+</ol>
+
+<fieldset id="new-post--metadata">
+
+   <legend>Metadata</legend>
+   
+   <div class="text-input">
+	   <label for="new-post--metadata--song-title">Song title</label>
+	   <input id="new-post--metadata--song-title" name="new-post--metadata--song-title" type="text" placeholder="Enter song title.">
+   </div>
+	  
+	<div class="text-input">
+	  <label for="new-post--metadata--song-artist">Artist</label>
+	  <input id="new-post--metadata--song-artist" name="new-post--metadata--song-artist" type="text" placeholder="Enter artist.">
+	</div>
+	
+</fieldset>
+
+<fieldset id="new-post--post-content">
+
+	<legend>Post content</legend>
+
+	<div class="text-input">
+		<label for="new-post--post-content--content">Body text</label>
+		<span class="label-hint">Format your text using <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" title="See the Markdown style guide">Markdown</a> syntax.</span>    
+		<textarea id="new-post--post-content--content" name="new-post--post-content--content" placeholder="Enter your post content here." cols="30" rows="20"></textarea>
+	</div>
+
+</fieldset>
+
+<fieldset id="new-post--links">
+
+	<legend>Music URLs</legend>
+	  
+	<div class="text-input">
+	  <label for="new-post--links--spotify">Spotify URL</label>
+	  <input id="new-post--links--spotify" name="new-post--links--spotify" type="text" placeholder="i.e. https://open.spotify.com/track/7zQsCWpDUHIMtUBm3wJo4Q">
+	</div>
+	  
+	<div class="text-input">
+	  <label for="new-post--links--applemusic">Apple Music URL</label>
+	  <input id="new-post--links--applemusic" name="new-post--links--spotify" type="text" placeholder="i.e. https://music.apple.com/gb/album/hello/1063894953?i=1063894958">
+	</div>
+
+</fieldset>
+
+<div id="new-post--buttons">
+	<p><a href="javascript:void(0)" class="button" onclick="copyToClipboard()">Copy to clipboard</a></p>
+	<p><a href="https://github.com/{{ site.github_repo }}/new/{{ site.branch }}/_posts" class="button" onclick="copyToClipboard()"target="_blank" rel="noopener noreferrer">Create post</a></p>
+</div>
+
+<script type="text/javascript" src="{{ site.url | append: site.baseurl | append: site.js-path | append: '/admin.js' }}" async></script>
+
+
+

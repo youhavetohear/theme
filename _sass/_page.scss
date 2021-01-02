@@ -1,6 +1,7 @@
 // Page styles
 
-body#page {
+body#page
+body#admin-new-post {
 	
 	main {
 		min-height: 60vh;
@@ -68,9 +69,6 @@ body#page {
 				100% 0;
 			background-size: 350px;
 		}
-		
-		
-		
 		
 		h1.page-title {
 			padding-top: 0;			
