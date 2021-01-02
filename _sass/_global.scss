@@ -46,9 +46,12 @@ body {
 
 main {
 	
+	color: 			$body-color;
+	background:		$main-background;
+	
 	/* Text and background color for dark mode */
 	@media (prefers-color-scheme: dark) {
-		color: $body-color-dark-mode;
+		color: 			$body-color-dark-mode;
 		background:		$main-background;
 	}
 	
