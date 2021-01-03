@@ -1,4 +1,11 @@
-main {
+body[id^='admin-'] main {
+
+	.align-left {
+		float: left;
+	}	
+	.align-right {
+		float: right;
+	}
 
 	legend {
 		@extend h2;
@@ -19,18 +26,25 @@ main {
 	button,
 	a.button {
 		@extend p;
-		display: inline-block;
 		cursor: pointer;
-		min-width: 150px;
-		width: 100%;
-		min-height: 40px;
+		
+		&.inline {
+			display: inline-block;
+			padding: 5px 15px;
+		}
+		&.full-width {
+			display: block;
+			width: 100%;
+			min-height: 40px;
+			vertical-align: middle;
+			line-height: 40px;
+			padding: 5px;
+		}
+		
 		font-weight: bold;
-		vertical-align: middle;
-		line-height: 40px;
 		background: $brand-pink;
 		color: $white;
-		border: 1px solid $brand-green;
-		padding: 5px;
+		border: 1px solid $brand-pink;
 		text-align: center;
 		margin-bottom: 10px;
 		text-decoration: none;
@@ -38,18 +52,14 @@ main {
 		&:hover {
 			background: $black;
 			cursor: pointer;
-			@include dark-mode {
-				color: $brand-green;
-			}
+			color: $brand-pink;
 		}
 
 		&:focus {
 			background: $black;
 			outline: 2px solid $brand-green;
 			cursor: pointer;
-			@include dark-mode {
-				color: $brand-green;
-			}
+			color: $brand-white;
 		}
 
 		&:last-child,

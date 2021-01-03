@@ -3,3 +3,23 @@ layout: page
 ---
 
 <h2>How to edit a post</h2>
+
+<p>All posts are listed in reverse chronological order, below.</p>
+<ol>
+	<li>Click “Edit post” next to the item you want to edit. This will open a new tab</li>
+	<li>Edit the file in the new tab</li>
+	<li>Click “Commit changes” button (button at the bottom of the new tab)</li>
+</ol>
+
+<ul class="edit-loop-item">
+	{% for post in site.posts %}
+	<li class="edit-loop-item clearfix">
+		<article class="edit-loop--item--meta align-left">
+		<time  class="loop-item-date" datetime="{{ post.date | date: '%Y-%m-%d %H:%M:%S' }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+		<span class="loop-item-title"><a href="{{ post.url }}" title="Read {{ post.title }}">{{ post.title | smartify }}</a></span> 
+		<span class="loop-item-artist">{{ post.artist | smartify }}</span>
+		</article>
+		<a class="button inline align-right" href="https://github.com/{{ site.github_repo }}/edit/{{ site.branch }}/{{ post.path }}" title="Edit {{ post.title }} on Github" target="_blank" rel="noopener noreferrer">Edit post</a>
+	</li>		
+	{% endfor %}
+</ul>

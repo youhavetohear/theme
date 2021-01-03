@@ -32,7 +32,7 @@ a {
 	}
 	
 	&:focus {
-		color: 	$brand-gray !important;
+		color: 	$brand-gray;
 		text-decoration: none;
 		background: $brand-green;
 		outline: 3px solid $brand-green;

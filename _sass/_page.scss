@@ -113,4 +113,26 @@ body[id^='admin-'] 	article#page-content {
 		background-size: 350px;
 	}
 	
+	li.edit-loop-item {
+		padding: 15px 0; 
+		border-bottom: 1px solid $brand-gray;
+		&:last-child {
+			border: none;
+		}
+		
+		time {
+			font-weight: 400;
+			color: $gray-600;
+			margin-right: 10px;
+		}
+		span.loop-item-title {
+			font-weight: 900;
+			margin-right: 10px;
+		}
+		
+	}
+	article.edit-loop--item--meta {
+		padding: 5px;
+	}
+	
 }
