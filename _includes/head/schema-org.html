@@ -1,7 +1,13 @@
-<meta itemprop="name" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
-<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description  | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
-{% if page.layout == 'photos/photo' %}
-<meta itemprop="image" 			content="{{ site.url | append: site.post-images-path | append: '/' | append: page.image }}">
+{% if page.layout == 'post' %}
+<meta itemprop="name" content="{{ page.title | strip_html | strip_newlines | append: ' by ' | append: page.artist | append: ' • ' | append: site.title | truncate: 160 }}">
 {% else %}
-<meta itemprop="image" content="{% if page.image %}{{ site.url | append: site.baseurl | append: site.social-images-path | append: page.image }}{% else %}{{ site.url | append: site.baseurl | append: site.social-media-image }}{% endif %}">
+<meta itemprop="name" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | append: ' • ' | append: site.title | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
 {% endif %}
+
+{% if page.layout == 'post' %}
+<meta itemprop="description" content="{{ site.description | strip_html | strip_newlines | truncate: 160 }}">
+{% else %}
+<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description  | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+{% endif %}
+
+<meta itemprop="image" content="{% if page.image %}{{ site.url | append: site.baseurl | append: site.social-images-path | append: page.image }}{% else %}{{ site.url | append: site.baseurl | append: site.social-media-image }}{% endif %}">
