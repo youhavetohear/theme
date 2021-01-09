@@ -263,6 +263,55 @@ body#loop {
 			color: $gray-500;
 		}
 		
+		section.post-weblinks {
+			margin-top: 0px;
+			margin-bottom: 20px;
+		}
+		a.button {
+			
+			display: inline-block;
+			position: relative;
+			
+			svg { 
+				display: block;
+				position: relative;
+				height: 30px;
+				width: 30px;
+				margin: 10px;
+			}
+			
+			border-radius: 100px;
+			border: 2px solid;
+			
+			font-weight: 900;
+			
+			&.spotify {
+				color: $brand-spotify;
+				border-color: $brand-spotify;
+				
+				&:hover {
+					background: $brand-spotify;
+					color: $brand-white;
+					text-decoration: none;
+				}
+				
+				margin-right: 10px;
+			}
+			&.applemusic {
+				color: $brand-applemusic;
+				border-color: $brand-applemusic;
+				svg {margin: 9px 10px 11px 10px;}
+				
+				&:hover {
+					background: $brand-applemusic;	
+					color: $brand-white;
+					text-decoration: none;
+				}
+				
+			}
+			
+		}
+		
 	}
 	
 	div.pagination {
