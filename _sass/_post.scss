@@ -89,16 +89,62 @@ body#post {
 		
 		
 		section.post-weblinks {
+			display: block;
 			margin-top: 20px;
 			margin-bottom: 20px;
 		}
 		a.button {
 			
-			padding: 10px 20px;
+			display: inline-block;
+			
+			@include xs {
+				font-size: 		$p-font-size-base-xs;
+				text-align: 	center;
+			}
+			@include sm {
+				font-size: 		$p-font-size-base-sm;
+			}
+			@include md {
+				font-size: 		$p-font-size-base-md;
+			}
+			@include lg {
+				font-size: 		$p-font-size-base-lg;
+			}
+			@include xl-up{
+				font-size: 		$p-font-size-base-xl;
+			}
+
+			line-height: 	1.2;
+			
+			padding: 10px 15px 10px 15px;
+
 			border-radius: 100px;
 			border: 2px solid;
 			
 			font-weight: 900;
+			
+			svg { 
+				display: inline-block;
+				position: relative;
+				
+				@include xs {
+					height: 		$p-font-size-base-xs;
+				}
+				@include sm {
+					height: 		$p-font-size-base-sm;
+				}
+				@include md {
+					height: 		$p-font-size-base-md;
+				}
+				@include lg {
+					height: 		$p-font-size-base-lg;
+				}
+				@include xl-up{
+					height: 		$p-font-size-base-xl;
+				}
+				
+				margin-right: 5px;
+			}
 			
 			@include xs {
 				display: block;
@@ -106,20 +152,40 @@ body#post {
 			}
 			
 			&.spotify {
+				
+				svg {
+					color: $brand-spotify;
+					padding-top: 3px;
+				}
+				
 				border-color: $brand-spotify;
 				
 				&:hover {
+					svg {
+						color: $brand-white;
+					}
 					background: $brand-spotify;
 					color: $brand-white;
 					text-decoration: none;
 				}
 				
-				margin-right: 10px;
+				@include sm-up {
+					margin-right: 10px;
+				}
 			}
 			&.applemusic {
+				
+				svg {
+					color: $brand-applemusic;
+					padding-top: 3px;
+				}
+				
 				border-color: $brand-applemusic;
 				
 				&:hover {
+					svg {
+						color: $brand-white;
+					}
 					background: $brand-applemusic;	
 					color: $brand-white;
 					text-decoration: none;
