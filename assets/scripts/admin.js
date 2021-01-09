@@ -63,6 +63,6 @@ function copyToClipboard(){
     var textToCopy = generateJekyllPost();
     navigator.clipboard.writeText(textToCopy);
     
-    document.getElementById("new-post--tempOutput").innerHTML = textToCopy;
+    // document.getElementById("new-post--tempOutput").innerHTML = textToCopy;
     
 }
