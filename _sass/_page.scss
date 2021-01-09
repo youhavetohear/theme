@@ -54,19 +54,19 @@ body[id^='admin-'] {
 		@include lg {
 			background-position: 
 				0 100%,
-				100% 0;
+				100% 100%;
 			background-size: 175px;
 		}
 		@include xl {
 			background-position: 
 				0 100%,
-				100% 0;
+				100% 100%;
 			background-size: 250px;
 		}
 		@include xxl {
 			background-position: 
 				0 100%,
-				100% 0;
+				100% 100%;
 			background-size: 350px;
 		}
 		
