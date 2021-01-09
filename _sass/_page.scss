@@ -4,14 +4,14 @@ body#page,
 body[id^='admin-'] {
 	
 	main {
-		min-height: 60vh;
+		min-height: 80vh;
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
 	
 	article#page-content {
 		
-		min-height: 50vh;
+		min-height: 75vh;
 	
 		@include xs {
 			padding-top: 75px;
