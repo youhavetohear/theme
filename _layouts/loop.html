@@ -18,7 +18,7 @@ layout: default
 		<article class="container">
 		
 			<h2 class="loop-item-title-and-artist">
-				<span class="loop-item-title"><a href="{{ post.url }}" title="Read {{ post.title }}">{{ post.title | smartify }}</a></span><br>
+				<span class="loop-item-title"><a href="{{ post.url }}" title="Read about {{ post.title }} by {{ post.artist }}">{{ post.title | smartify }}</a></span><br>
 				<span class="loop-item-artist">{{ post.artist | smartify }}</span>
 			</h2>
 			{{ post.content }}
